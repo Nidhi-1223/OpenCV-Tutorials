@@ -1,4 +1,4 @@
-import detector
+import detector_guassianBlur
 import tkinter
 import PIL
 from PIL import ImageTk
@@ -16,7 +16,7 @@ imageLabel.pack()
 #the logic to refresh the label
 def showFrame():
     #getting image array from detector
-    img = detector.detect()     #detector file mein detect function
+    img = detector_guassianBlur.detect()     #detector file mein detect function
     #converting image array to Pillow image object
     frame = PIL.Image.fromarray(img)
     #creating tkinter image object and changing label's image
